@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Magazin online de cadouri</title>
+    <style>
+	 body {
+		background-image: linear-gradient(#f7f6fa, #f8ebfc, #ebeefc);
+
+		
+      }
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .row {
+        display: flex;
+        gap: 0px;
+      }
+
+      .lista-prod {
+        padding-right: 30%;
+        padding-left: 0 px;
+        margin-right: auto;
+        margin-left: auto;
+        gap: 30px;
+		position:static;
+      }
+      .col {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .sectiune-cos {
+        padding-left: 10%;
+        padding-right: 0 px;
+      }
+      .product {
+        margin: auto;
+        justify: center;
+        justify-content: center;
+        position: relative;
+        border-style: outset;
+        background-color: #ffffff;
+        width: 250px;
+      }
+      .product:hover {
+        border-color: purple;
+        border-style: inset;
+      }
+      .produs-img {
+        border-radius: 0px;
+        width: 250px;
+        height: 250px;
+      }
+	  .product-name{
+	  font-family:cursive;
+	  margin:auto;
+	  font-size: 15px;
+	  text-align:center;
+	  font-variant: small-caps;
+	  }
+      .produs-img:hover {
+        border-radius: 180px;
+      }
+      button-add {
+        position: relative;
+        display: flex;
+        margin: auto;
+        font-size: 15px;
+      }
+      .specificatii-produs {
+        justify: center;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+		text-align:center;
+      }
+      .credit {
+        justify: right;
+      }
+      .d-flex {
+        display: flex !important;
+      }
+      .flex-row {
+        flex-direction: row !important;
+      }
+      .cart-sections {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        background-clip: border-box;
+        border: 1px solid #ffd9cc;
+        border-radius: 10px;
+		border-style: outset;
+		box-shadow: 0 5px 10px grey;
+		margin-top: 8px;
+		margin-bottom: 15px;
+		display: flex !important;
+        flex-direction: row;
+      }
+      .p-in-cart{
+        padding: 8px !important;
+		margin-top: 10px !important;
+      }
+	  .cart_item_name{
+		font-family:cursive;
+		font-size: 15px;
+		font-variant: small-caps;
+	  }
+	  .cart_item_price{
+		font-size:17px;
+		font-family: Arial, Helvetica, sans-serif;
+	  }
+	  .btn_qty{
+		text-align: center;
+		justify:center;
+		justi:center;
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-top: 12px;
+		cursor: pointer;
+	  }
+	  .btn_clear_cart{
+		text-align: center;
+		display: inline-block;
+		margin: auto;
+		cursor: pointer;
+	  }
+	  .total_sectiune{
+		text-align:right !important; 
+		justify-content:flex-end;
+		margin: auto !important;
+		display:flex;
+	  }
+	  .total_text{
+	    font-family: Tahoma;
+	    font-size:20px;
+	  }
+	  .text_cart{
+	    text-align:left;
+	    font-family:cursive;
+	    font-size: 15px;
+	    font-variant: small-caps;
+	    margin:auto;
+	  }
+	  .products_title{
+	    position: relative;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 25px;
+		text-align:center;
+		justify-content:center;
+	  }
+	  .titlu_produse{
+	    background-color: white;
+	    border-radius:30px;
+	    margin-left:150px;
+	    margin-right:100px;
+	    box-shadow: 3px 3px;
+	  }
+	  .cart_title{
+	    position: relative;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 25px;
+		text-align:center;
+		justify-content:center;
+	  }
+	  .sectiune_titlu_cos{
+	    background-color: white;
+	    border-radius:30px;
+		box-shadow: 3px 3px;
+	  }
+	  
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="font-family: georgia; text-align: center">
+        Magazin online de cadouri
+      </h1>
+      <b
+        ><h3 style="color: blue"><em> Cauți cadoul potrivit? </em></h3></b
+      >
+      <p>
+        Noi vă stăm la dispoziție cu o multitudine de cadouri personalizate,
+        oferindu-vă posibilitatea de a vă lăsa amprenta asupra fiecărui produs.
+      </p>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+			<div class="titlu_produse">
+            <h4 class="products_title">Produse</h4></div>
+            <div class="lista-prod">
+              <div class="row">
+                <div class="col">
+                  <div class="product">
+                    <img
+                      class="produs-img"
+                      src="C:\Users\alexa\Desktop\facultate\LICENTA\an3\SEM1\Comert electronic\sem\pozePr\CanaPers.jpg"
+                      alt="CanaPers"
+                    />
+                    <div class="specificatii-produs">
+                      <p class="product-name">Cană Personalizată</p>
+                      <p class="product-price">35 LEI</p>
+                      <button
+                        class="button-add"
+                        type="button"
+                        data-action="add-to-cart"
+                      >
+                        Adaugă în coș
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product">
+                    <img
+                      class="produs-img"
+                      src="C:\Users\alexa\Desktop\facultate\LICENTA\an3\SEM1\Comert electronic\sem\pozePr\TricouPers.jpg"
+                      alt="TricouPers"
+                    />
+                    <div class="specificatii-produs">
+                      <p class="product-name">Tricou Personalizat</p>
+                      <p class="product-price">50 LEI</p>
+                      <button
+                        class="button-add"
+                        type="button"
+                        data-action="add-to-cart"
+                      >
+                        Adaugă în coș
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product">
+                    <img
+                      class="produs-img"
+                      src="C:\Users\alexa\Desktop\facultate\LICENTA\an3\SEM1\Comert electronic\sem\pozePr\AgendaPers.jpg"
+                      alt="AgendaPers"
+                    />
+                    <div class="specificatii-produs">
+                      <p class="product-name">Agendă personalizată</p>
+                      <p class="product-price">60 LEI</p>
+                      <button
+                        class="button-add"
+                        type="button"
+                        data-action="add-to-cart"
+                      >
+                        Adaugă în coș
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sectiune-cos">
+			<div class="sectiune_titlu_cos">
+            <h4 class="cart_title">Cart</h4> </div>
+            <div class="cart">
+              <script src="script.js"></script>
+				<div class="text_cart">
+					<p id="total"  style=" color:blue; "> Coșul dvs este gol. </p> 
+					<p id="comMin" style=" color:red; ">Comanda minimă este de 50 de lei.</p>
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="credit">Acasandre Alexandra | IE32</footer>
+  </body>
+</html>
